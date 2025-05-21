@@ -12,7 +12,7 @@ def hello_world():
         passwd="my-secret-pw",  # Password for the MySQL user
         db="mysql"      # Name of the database to connect to
     )
-    cur = db.cursor()
+    cur = db.cursor
     cur.execute("SELECT VERSION()")
     version = cur.fetchone()
     return f'Hello, World! MySQL version: {version[0]}'
