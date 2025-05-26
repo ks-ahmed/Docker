@@ -7,5 +7,5 @@ RUN apt-get update && apt-get install -y \
     libmariadb-dev \
     pkg-config
 RUN pip install flask mysqlclient
-EXPOSE 5000
+EXPOSE 5001
 CMD ["python", "app.py"]
